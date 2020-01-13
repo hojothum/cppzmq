@@ -1063,7 +1063,7 @@ class monitor_t
 };
 
 #if defined(ZMQ_BUILD_DRAFT_API) && defined(ZMQ_CPP11) && defined(ZMQ_HAVE_POLLER)
-template<typename T = void> class poller_t
+template<typename T> class poller_t
 {
   public:
     void add(zmq::socket_t &socket, short events, T *user_data)
